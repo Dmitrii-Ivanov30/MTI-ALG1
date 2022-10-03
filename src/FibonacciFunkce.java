@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class FibonacciFunkce {
-
+    // Vytvořil jsem fibonacci funkce, která použivá cache array pro rychlejší kompilaci programu
     public static long fib(int num, HashMap<Integer, Long> cache) {
 
         if (cache.containsKey(num)) {
@@ -22,7 +22,6 @@ public class FibonacciFunkce {
         int number = sc.nextInt();
         long result = fib(number, new HashMap<>());
         System.out.printf("Vysledek je %d", result);
-        // s
     }
 
 }
